@@ -1,4 +1,4 @@
-																		
+
 <style>
 	.qrcode{
 		height:100px;
