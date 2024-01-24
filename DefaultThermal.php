@@ -1,3 +1,10 @@
+																		
+<style>
+	.qrcode{
+		height:100px;
+		width:100px;
+	}
+</style>
 
 <table class="voucher" style=" width: 180px;">
   <tbody>
@@ -67,4 +74,4 @@
       </td>
     </tr>
   </tbody>
-</table>	        
+</table>	        	        	        
