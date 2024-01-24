@@ -1,3 +1,4 @@
+																		
 <style>
 	.qrcode{
 		height:80px;
@@ -9,12 +10,12 @@
   <tbody>
 <!-- Logo Hotspotname -->
     <tr>
-      <td style="text-align: left; font-size: 11.5px; font-weight:bold; border-bottom: 1px black solid;"><?= $hotspotname; ?>  <span id="num"><?= " [$num]"; ?></span></td>
+      <td style="text-align: left; font-size: 14px; font-weight:bold; border-bottom: 1px black solid;"><img src="<?= $logo; ?>" alt="logo" style="height:30px;border:0;">  <?= $hotspotname; ?>  <span id="num"><?= " [$num]"; ?></span></td>
     </tr>
 <!-- /  -->
     <tr>
       <td>
-    <table style=" text-align: center; width: 200px; font-size: 12px;">
+    <table style=" text-align: center; width: 210px; font-size: 12px;">
   <tbody>
 <!-- Username Password QR    -->
     <tr>
@@ -23,11 +24,10 @@
 <!-- Username = Password    -->
 <?php if ($usermode == "vc") { ?>
         <tr>
-          <td font-size: 10.5px; font-weight:bold >Kode Voucher</td>
+          <td font-size: 12px;>Kode Voucher</td>
         </tr>
         <tr>
-          <td style="width:100%; border: 1px solid black; font-weight:bold;
-          font-size:12px; letter-spacing:3px;"><?= $username; ?></td>
+          <td style="width:100%; border: 1px solid black; font-weight:bold; font-size:16px;"><?= $username; ?></td>
         </tr>
 <!-- /  -->
 <!-- Username & Password  -->
@@ -73,27 +73,18 @@
 <!-- /  -->
     <tr>
       <!-- Price  -->
-      <td colspan="2" style="border-top: 1px solid black;font-weight:bold;
-      font-size:12px"><?= $price; ?></td>
+      <td colspan="2" style="border-top: 1px solid black;font-weight:bold; font-size:16px"><?= $validity; ?> <?= $timelimit; ?> <?= $datalimit; ?> <?= $price; ?></td>
 <!-- /  -->
     </tr>
     <tr>
-      <!-- Note 1 -->
-      <td colspan="2" style="font-weight:bold; font-size:8px">Dengan Membeli
-      Voucher<br>Anda Telah Melakukan Sedekah Rp500,00 <hr></td>
-    </tr>
-    <tr>
-      <!-- Note 2 -->
-      <td colspan="2" style="font-weight:bold; font-size:9.5px">Login: http://<?= $dnsname; ?></td>
+      <!-- Note  -->
+      <td colspan="2" style="font-weight:bold; font-size:12px">Login: http://<?= $dnsname; ?></td>
 <!-- /  -->
     </tr>
-    
-    
 <!-- /  -->
   </tbody>
     </table>
       </td>
     </tr>
   </tbody>
-</table>
-	        	        	        
+</table>	        	        	        
